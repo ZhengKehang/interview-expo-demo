@@ -79,7 +79,7 @@ const Calendar: React.FC<UseCalendar> = (props) => {
                 onPress={() => selectMonth(dayjs().month(index).format('MM'))}
               >
                 <Text style={[
-                  Number(selectedMonth) === index && styles.selectedItem
+                  Number(selectedMonth) - 1 === index && styles.selectedItem
                 ]}>{month}</Text>
               </TouchableOpacity>
             ))}
