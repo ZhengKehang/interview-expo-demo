@@ -12,6 +12,7 @@ export default function Hello() {
       <ThemedText type="title">Hello World</ThemedText>
       <LinkGuide title="Calculator" onPress={() => {router.push('/calculator')}} />
       <LinkGuide title="Calendar" onPress={() => {router.push('/calendar')}} />
+      <LinkGuide title="Time" onPress={() => {router.push('/time')}} />
     </ThemedView>
   );
 }

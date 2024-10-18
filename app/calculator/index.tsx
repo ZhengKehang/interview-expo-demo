@@ -18,7 +18,7 @@ const Calculator: React.FC = () => {
   return (
     <View style={styles.calculator}>
       <View style={styles.calculatorDisplay}>
-        <Text style={styles.displayText}>{displayValue}</Text>
+        <Text numberOfLines={1} lineBreakMode="clip" style={styles.displayText}>{displayValue}</Text>
       </View>
       <View style={styles.calculatorKeypad}>
         <CalculatorButton label="AC" onPress={handleClear} />
@@ -54,10 +54,13 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
     alignItems: 'flex-end',
+    justifyContent: 'flex-end',
+    height: 100,
   },
   displayText: {
     color: 'white',
     fontSize: 36,
+    lineHeight: 40,
   },
   calculatorKeypad: {
     flexDirection: 'row',

@@ -31,6 +31,7 @@ export default function RootLayout() {
         <Stack.Screen name="index" options={{ title: 'Home' }} />
         <Stack.Screen name="calculator/index" options={{ title: 'Calculator' }}  />
         <Stack.Screen name="calendar/index" options={{ title: 'Calendar' }}  />
+        <Stack.Screen name="time/index" options={{ title: 'Time' }}  />
         <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>
