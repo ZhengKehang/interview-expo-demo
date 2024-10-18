@@ -20,7 +20,9 @@ const Index = React.memo(() => {
   return (
     <View style={{padding: 16}}>
       <Text style={{fontSize: 16}}>服务器时间</Text>
-      <Text style={{fontSize: 18, lineHeight: 40}}>{dayjs(data?.data).format('YYYY/MM/DD HH:mm:ss')}</Text>
+      <Text style={{fontSize: 18, lineHeight: 40}}>
+        {data?.data ? dayjs(data?.data).format('YYYY/MM/DD HH:mm:ss') : 'Network Error'}
+      </Text>
     </View>
   );
 });
